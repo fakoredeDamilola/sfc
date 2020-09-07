@@ -16,7 +16,7 @@ h3 {
   background-attachment: fixed;
   color: white;
   position: relative;
-  height: 90vh;
+  height: 75vh;
   width: 100%;
 }
 .image-logo {
@@ -53,10 +53,10 @@ h3 {
 }
 .time {
   border-radius: 50%;
-  border: 1px solid rgb(117, 114, 114);
-  font-size: 1em;
-  width: 50px;
-  height: 50px;
+  border: 1px solid rgb(253, 187, 0);
+  font-size: 1.3em;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +71,13 @@ h3 {
   padding-top: 120px;
 }
 .deadline > span {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .time span {
   padding-right: 5px !important;
 }
 button {
-  background-color: rgb(253, 187, 0);
+  background-color: white;
   padding: 10px 25px;
   border-radius: 20px;
   margin: 30px 0;
@@ -86,14 +86,14 @@ button {
   border: none;
 }
 button:hover {
-  background: rgb(219, 163, 8);
+  background: rgb(2, 130, 203);
 }
 button:hover a {
   text-decoration: none;
   color: white;
 }
 button a {
-  color: white;
+  color: rgb(2, 130, 203);
   text-decoration: none;
 }
 .companies {
@@ -117,6 +117,10 @@ button a {
   background: rgb(2, 130, 203);
   color: white;
 }
+.event {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
 .event-icon {
   width: 100px;
   height: 100px;
@@ -138,6 +142,10 @@ button a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 40px;
+}
+.about {
+  background-color: rgb(253, 187, 0);
+  color: white;
 }
 .bdr--btm {
   background: rgb(32, 25, 25);
@@ -233,8 +241,11 @@ button a {
   bottom: 0%;
 }
 .venueMap {
-  background: url(img3.jpg);
+  background: linear-gradient(rgba(42, 43, 44, 0.508), rgba(44, 43, 43, 0.533)),
+    url(img3.jpg);
   height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 992px) {
   .venueMap {
@@ -244,14 +255,14 @@ button a {
 
 @media (min-width: 600px) {
   .time {
-    font-size: 1.2em;
-    width: 65px;
-    height: 65px;
+    font-size: 2em;
+    width: 80px;
+    height: 80px;
     /* flex-direction: row; */
   }
   .deadline > span {
     margin: 0 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 20px;
   }
   .section1 {

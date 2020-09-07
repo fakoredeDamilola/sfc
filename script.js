@@ -1,6 +1,6 @@
 //create a time interval
 
-let deadline = "2020-10-02 12:00";
+let deadline = "2020-11-21 10:00";
 let daysVal = document.querySelector(".daysVal");
 let hoursVal = document.querySelector(".hoursVal");
 let minutesVal = document.querySelector(".minutesVal");
