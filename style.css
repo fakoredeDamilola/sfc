@@ -19,8 +19,11 @@ h3 {
   height: 85vh;
   width: 100%;
 }
+.menu-toggle {
+  margin: 6px 0;
+}
 .image-logo {
-  width: 120px;
+  width: 70px;
 }
 .header {
   position: absolute;
@@ -37,26 +40,29 @@ h3 {
 .deadline {
   font-weight: 400;
   border-radius: 50px;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
 }
 .deadline-container {
   position: absolute;
-  bottom: -60px;
+  bottom: -40px;
   height: 120px;
   left: 0;
   box-sizing: border-box;
   border-radius: 50px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .time {
   border-radius: 50%;
   border: 1px solid rgb(253, 187, 0);
-  font-size: 1.3em;
-  width: 60px;
-  height: 60px;
+  font-size: 2em;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +77,8 @@ h3 {
   padding-top: 120px;
 }
 .deadline > span {
-  margin-top: 20px;
+  margin-top: 0px;
+  font-size: 40px;
 }
 .time span {
   padding-right: 5px !important;
@@ -144,7 +151,7 @@ button a {
   grid-gap: 40px;
 }
 .about {
-  background-color: rgb(253, 187, 0);
+  background-color: rgb(156, 118, 11);
   color: white;
 }
 .bdr--btm {
@@ -249,9 +256,9 @@ button a {
 }
 @media (max-width: 360px) {
   .time {
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
   }
 }
 @media (min-width: 992px) {
@@ -262,15 +269,26 @@ button a {
 
 @media (min-width: 600px) {
   .time {
-    font-size: 2em;
-    width: 80px;
-    height: 80px;
+    font-size: 2.6em;
+    width: 100px;
+    height: 100px;
     /* flex-direction: row; */
   }
+
   .deadline > span {
     margin: 0 10px;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 0px;
+    font-size: 40px;
+  }
+  .deadline {
+    width: auto;
+  }
+  .deadline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: -60px;
   }
   .section1 {
     height: 77vh;
