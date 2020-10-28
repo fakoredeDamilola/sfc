@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SFC, UI summit</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="favicon.png" rel="icon" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/da014721b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light px-4 header bg-white"
+      style="border-bottom: 2px solid rgb(2, 130, 203)"
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="cropped-SFC2.jpg" class="image-logo" alt="SFC, UI"
+      /></a>
+      <button
+        class="navbar-toggler menu-toggle"
+        type="button border-0"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav links">
+          <li class="nav-item">
+            <a class="nav-link" href="landingpage.html">Event</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="landingpage.html">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="landingpage.html">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="landingpage.html">About</a>
+          </li>
+        </ul>
+        <div class="icon d-flex">
+          <div>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="form pt-5">
+      <div class="container pt-5">
+        <div class="pt-5">
+          FinXposition is SFC Unibadan’s long-awaited conference, with the
+          theme—Spurring Investments in Emerging Markets: Prospects, Ethical
+          Concerns, and Regulatory Issues. A one-day event, FinXposition 1.0
+          seeks to create a melting pot of revolutionary ideas from some of the
+          finest leaders and thinkers in the Finance industry, with a goal to
+          enlighten, inspire, and empower the next generation of players in the
+          global Finance and Investments space.
+        </div>
+        <div class="py-5">
+          <h3>Fill the form to register for FinXposition 1.0</h3>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="email">Email Address <span>*</span></label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="university">University <span>*</span></label>
+            <input type="text" class="form-control" id="university" />
+          </div>
+          <div class="form-group">
+            <label for="courseOfStudy">Course of Study <span>*</span></label>
+            <input type="text" class="form-control" id="courseOfStudy" />
+          </div>
+          <div class="form-group">
+            <label for="careerFocus">Career Focus <span>*</span></label>
+            <input type="text" class="form-control" id="careerFocus" />
+          </div>
+          <div class="form-group mb-4 mt-4">
+            <label for="hearAboutEvent"
+              >How did you hear about this event <span>*</span></label
+            >
+            <select name="event" id="hearAboutEvent">
+              <option value="Website">Website</option>
+              <option value="Friend">Friend</option>
+              <option value="Whatsapp">Whatsapp</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Twitter">Twitter</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="gradeLevelOfInterest"
+              >Grade level of interest in finance and investements on scale of 1
+              to 10 <span>*</span></label
+            >
+            <select name="event" id="gradeLevelOfInterest">
+              <option value="1">1 - low</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10 - high</option>
+            </select>
+          </div>
+          <div class="form-group my-4">
+            <label for="Expectation"
+              >Expectation from summit <span>*</span></label
+            >
+            <textarea
+              name="expectation"
+              id="expectation"
+              cols="30"
+              rows="5"
+              class="form-control"
+            ></textarea>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script> -->
+
+    <script src="register.js"></script>
+  </body>
+</html>
