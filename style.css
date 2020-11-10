@@ -181,7 +181,7 @@ button a {
 }
 /************ speakers *********/
 .talent-top {
-  background: url("img1.jpg");
+  background: url("cropped-SFC2.jpg");
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -209,7 +209,7 @@ button a {
 .talent-item-div {
   width: 100%;
   height: 270px;
-  background: url("img2.jpg");
+  background: url("cropped-SFC2.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -270,7 +270,7 @@ nav i {
 }
 .venueMap {
   background: linear-gradient(rgba(42, 43, 44, 0.508), rgba(44, 43, 43, 0.533)),
-    url(img3.jpg);
+    url("img3.jpg");
   height: 400px;
   background-size: cover;
   background-position: center;
