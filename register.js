@@ -61,5 +61,5 @@ function saveResponse(obj) {
     //     })
     // })
     db.collection("responses").add(obj)
-        .then(doc => alert("Data completed, thank you for your time, we are looking forward to meet you at finXposition 1.0"))
+        .then(doc => alert("Data completed, thank you for your time, we are looking forward to meeting you at finXposition 1.0"))
 }
