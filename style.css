@@ -211,8 +211,9 @@ button a {
   height: 270px;
   background: url("cropped-SFC2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
+  transition: 0.5s;
 }
 
 .talent-grid {
@@ -264,6 +265,9 @@ nav i {
   width: 100%;
   color: white;
   border-radius: 10px;
+}
+.talent-item-div:hover {
+  transform: scale(1.17);
 }
 .talent-item-div:hover .talent-item-icons {
   bottom: 0%;
