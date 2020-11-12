@@ -26,6 +26,11 @@ let speakers = [
     img: "Zeal\ Akariwe.jpg",
     name: "Zeal Akariwe",
     info: "Zeal holds a BSc in Actuarial Science from the University of Lagos and certifications from the London School of Economics (LSE) in Risk Management and Cambridge University in Human Diverstity. He boasts an impressive career in finance. After a year in Insurance, his banking experience started in 2000 in HR, Admin and Corporate Banking after which his treasury career started with Standard Chartered in 2004. He worked with Standard Chartered London in 2006 on the Africa Structuring desk where he focused on structuring of derivative transactions for the bank’s footprint. After this, he moved to act as the Head of the Sales team in Standard Chartered Zambia and then returned to Nigeria in 2008 to head Financial Markets Sales and was a key member of Standard Chartered’s Wholesale Bank management Team.<br><br> Zeal also founded “The Angel Project”, an organization focused on releasing convicted prisoners who have the option of fines while also engaging the office of the CJ of Lagos to decongest prisons and ensure justice is expedited for people who are awaiting trial. The Angel Project also pays the medical bills of selected impoverished patients.<br><br>Since 2015, he now runs Graeme Blaque Advisory, bringing financial solutions that span from regulatory interpretation and interphase to structuring simple transaction to ensure that the optimal result is obtained without flouting regulations. So far, his firm has acted as hedge adviser on an oil producing asset valued in excess of $2.5bn and in other financial advisory roles within the oil and gas and manufacturing sectors."
+  },
+  {
+    img: "Temitope\ Oshin.jpg",
+    name: "Temitope Oshin",
+    info: "Temitope Oshin is a Chartered Certified Accountant with First Class honors in Economics and a Masters degree in Finance. She was a full time management consultant at a leading Nigerian bank and has led several projects and initiatives targeted at driving business process re-engineering, operating model redesign and enterprise process improvement and transformation.<br><br>Out of her passion to see more millennials take charge of their finance and embrace the money conversation, she founded <b>Finance With Tope<b> - a  platform that empowers and motivates individuals to take charge of their finances and lay a solid financial foundation for their future. Tope works with several individuals and companies across the world to help them make smart money decisions, save and invest money, access business funding and build a financially rewarding life.<br><br>In 2019, Tope launched the FWT Smart Money Community - a channel through which she is helping millennials set SMART financial goals and get the required support to achieve those goals. Under the community, Tope has helped over 100 people (within and outside Nigeria) invest over NGN50 Million across several sectors within the Nigerian economy."
   }
 ]
 let speakerLink = document.querySelectorAll(".speakerLink")
@@ -36,6 +41,9 @@ Array.from(speakerLink).forEach(speaker => {
 
   speaker.addEventListener("click", function () {
     let click = this.dataset.id
+    if (click == 4) {
+      speakerImg.style.backgroundPosition = "center"
+    }
     speakerInfo.innerHTML = speakers[click].info
     speakerName.innerHTML = speakers[click].name
     speakerImg.style.backgroundImage = `url("${speakers[click].img}")`
