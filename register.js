@@ -38,7 +38,9 @@ form.addEventListener("submit", function (e) {
     })
     if (dataValue.every(value => value === true)) {
         saveResponse(newUser)
-        console.log(newUser)
+        alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
+
+        window.location.replace("https://sfcui.org.ng/event/index.html");
     } else {
         alert("Please fill all the information. Go through the form again")
         console.log(newUser)
