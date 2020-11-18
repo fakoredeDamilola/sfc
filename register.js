@@ -38,12 +38,10 @@ form.addEventListener("submit", function (e) {
     })
     if (dataValue.every(value => value === true)) {
         saveResponse(newUser)
-        alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
+        // alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
 
-        window.location.replace("https://sfcui.org.ng/event/index.html");
     } else {
         alert("Please fill all the information. Go through the form again")
-        console.log(newUser)
     }
 })
 
@@ -58,10 +56,14 @@ async function saveResponse(obj) {
         data: obj,
         statusCode: {
             0: function () {
-                console.log("sucess 1")
+                 alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
+                 
+        window.location.replace("https://sfcui.org.ng/event/index.html");
             },
             200: function () {
-                console.log("success 2")
+                 alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
+                 
+        window.location.replace("https://sfcui.org.ng/event/index.html");
             }
         }
     })
