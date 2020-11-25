@@ -58,18 +58,18 @@ function createValue(time) {
   return values;
 }
 function setTimeUI(time) {
-  let x = setInterval(function () {
-    let now = new Date().getTime();
-    let later = time.getTime();
-    let timeDiff = (later - now) / 1000;
-    let values = createValue(timeDiff);
-    daysVal.innerHTML = values.days;
-    hoursVal.innerHTML = values.hours > 9 ? values.hours : `0${values.hours}`;
-    minutesVal.innerHTML =
-      values.minutes > 9 ? values.minutes : `0${values.minutes}`;
-    secondsVal.innerHTML =
-      values.seconds > 9 ? values.seconds : `0${values.seconds}`;
-  }, 1000);
+  // let x = setInterval(function () {
+  //   let now = new Date().getTime();
+  //   let later = time.getTime();
+  //   let timeDiff = (later - now) / 1000;
+  //   let values = createValue(timeDiff);
+  //   daysVal.innerHTML = values.days;
+  //   hoursVal.innerHTML = values.hours > 9 ? values.hours : `0${values.hours}`;
+  //   minutesVal.innerHTML =
+  //     values.minutes > 9 ? values.minutes : `0${values.minutes}`;
+  //   secondsVal.innerHTML =
+  //     values.seconds > 9 ? values.seconds : `0${values.seconds}`;
+  // }, 1000);
 }
 
 setTimeUI(deadlineDate);

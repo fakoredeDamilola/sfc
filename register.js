@@ -47,26 +47,26 @@ form.addEventListener("submit", function (e) {
 
 
 async function saveResponse(obj) {
-    let url = "https://script.google.com/macros/s/AKfycbwARmZ351UkrwFtnBZ7hsqjeEeaw__xtEQclWUypaC3y_gq2Hc/exec"
+    // let url = "https://script.google.com/macros/s/AKfycbwARmZ351UkrwFtnBZ7hsqjeEeaw__xtEQclWUypaC3y_gq2Hc/exec"
 
-    $.ajax({
-        url: url,
-        method: "POST",
-        dataType: "xml",
-        data: obj,
-        statusCode: {
-            0: function () {
-                 alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
-                 
-        window.location.replace("https://sfcui.org.ng/event/index.html");
-            },
-            200: function () {
-                 alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
-                 
-        window.location.replace("https://sfcui.org.ng/event/index.html");
-            }
-        }
-    })
+    // $.ajax({
+    //     url: url,
+    //     method: "POST",
+    //     dataType: "xml",
+    //     data: obj,
+    //     statusCode: {
+    //         0: function () {
+    //              alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
+
+    //     window.location.replace("https://sfcui.org.ng/event/index.html");
+    //         },
+    //         200: function () {
+    //              alert("Data completed, thank you for your time, we are looking forward to meeting you at FinXposition 1.0")
+
+    //     window.location.replace("https://sfcui.org.ng/event/index.html");
+    //         }
+    //     }
+    // })
 
 
 }

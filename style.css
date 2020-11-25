@@ -215,7 +215,33 @@ button a {
   position: relative;
   transition: 0.5s;
 }
-
+.afterMath {
+  line-height: 40px;
+}
+.afterMath ul {
+  margin: 20px 0;
+  list-style-type: none;
+  margin-left: -40px;
+}
+.afterMath ul li {
+  padding: 5px 10px;
+}
+.afterMath ul li:hover {
+  background: rgb(102, 77, 9);
+}
+.afterMath ul li a {
+  color: white;
+  text-decoration: none;
+}
+.afterMath ul li a i {
+  margin-right: 20px;
+}
+.organizing-img {
+  width: 100%;
+}
+.organizing-img img {
+  width: 100%;
+}
 .talent-grid {
   display: flex;
   justify-content: center;
